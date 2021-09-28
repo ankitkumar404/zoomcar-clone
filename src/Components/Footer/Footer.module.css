@@ -1,0 +1,155 @@
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+/**==============================================
+ * !                  Footer top
+ *=============================================**/
+.footer {
+  background-color: rgb(67, 80, 92);
+  color: white;
+  margin-top: 50px;
+  width: 100%;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.footer .Button {
+  display: grid;
+  grid-template-columns: 210px 210px 210px 210px;
+  grid-template-rows: auto;
+  font-size: 14px;
+  width: 800px;
+  margin: auto;
+  /* background-color: black; */
+}
+.footer .Button button {
+  width: 210px;
+  border: thin;
+  background-color: rgb(67, 80, 92);
+  text-align: center;
+  height: 150px;
+}
+
+.Button button:hover {
+  cursor: pointer;
+  background-color: rgb(50, 60, 69);
+}
+
+.footer .Button .link {
+  align-content: center;
+}
+
+.footer .Button .link img {
+  width: 50px;
+  padding-bottom: 5px;
+}
+
+.footer .Button button p {
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 200;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.footer h4 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 25px;
+  width: 180px;
+  margin: 15px auto;
+  color: white;
+}
+
+/**=======================
+ * !      About us
+ *========================**/
+.footer1 {
+  background-color: rgb(51, 65, 79);
+  color: rgb(229, 225, 193);
+  width: 100vw;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.aboutus {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: auto auto;
+  grid-gap: 8px 25px;
+  width: 1020px;
+  margin: auto;
+}
+
+.aboutus > div {
+  width: 200px;
+  text-align: left;
+}
+
+.aboutus a {
+  color: rgb(229, 225, 193);
+  font-size: 15px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/**=======================
+ * !      Cities
+ *========================**/
+
+.cities {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-gap: 8px 25px;
+  width: 1020px;
+  margin: auto;
+}
+
+.help {
+  color: rgb(229, 225, 193);
+  text-decoration: none;
+  width: 200px;
+  text-align: left;
+}
+
+.cities a {
+  color: rgb(229, 225, 193);
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/**=======================
+ * !      Airport
+ *========================**/
+
+.airport {
+  display: grid;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-rows: auto auto auto auto auto;
+  grid-gap: 8px 57px;
+  width: 1020px;
+  margin: auto;
+}
+
+.airport > div {
+  color: rgb(229, 225, 193);
+  text-decoration: none;
+  width: 200px;
+  text-align: left;
+}
+
+.airport a {
+  color: rgb(229, 225, 193);
+  font-size: 15px;
+  text-decoration: none;
+}
