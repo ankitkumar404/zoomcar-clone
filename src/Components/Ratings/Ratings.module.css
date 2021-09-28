@@ -1,0 +1,35 @@
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.imgdiv {
+  display: grid;
+  grid-template-columns: 225px 225px 225px 225px 225px;
+  grid-template-rows: 60px 30px 45px;
+  grid-gap: 19px;
+  margin-left: 50px;
+  align-items: center;
+}
+
+.imgdiv img {
+  height: 75px;
+  align-content: center;
+  margin: auto;
+}
+
+.imgdiv b {
+  font-size: 30px;
+  font-weight: 600;
+  margin: auto;
+}
+
+.imgdiv p {
+  font-size: 18px;
+  margin: auto;
+  text-align: center;
+}
+.imgdiv p span {
+  text-align: left;
+}

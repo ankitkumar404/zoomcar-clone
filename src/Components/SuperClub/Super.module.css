@@ -1,0 +1,90 @@
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.sup_background {
+  margin: 0%;
+  background: url("./img/supermilers_bg.ce8bf185500c5dd96a4c1034b89e6e0c.jpg")
+    repeat top center / cover;
+  width: 100%;
+  color: #fff;
+  height: 480px;
+  text-align: center;
+}
+.sup_sub1 {
+  padding: 20px 0%;
+  margin-top: 0%;
+  height: 440px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+}
+.sup_sub1 > h2 {
+  font-size: 27px;
+  font-weight: 500;
+}
+.sup_logo img {
+  width: 70px;
+  margin: auto;
+}
+.privileges {
+  width: 20%;
+  color: rgb(143, 143, 143);
+  display: flex;
+  margin: auto;
+}
+.privileges .hor_li {
+  position: relative;
+  top: 10px;
+  margin: 0 12px;
+  width: 40px;
+  height: 1px;
+  background-color: gray;
+}
+.privileges .sup_mid {
+  width: 390px;
+  color: rgb(155, 155, 155);
+}
+.z_points {
+  height: 250px;
+  margin-top: 200px;
+  color: black;
+}
+.z_box {
+  width: 180px;
+  height: 100px;
+  background-color: white;
+  margin: auto;
+  background-position-y: 100px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 1px 1px grey;
+  margin-bottom: 50px;
+}
+.z_box img {
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+.z_box div {
+  margin-top: 0%;
+}
+.z_para {
+  width: 190px;
+  margin: auto;
+}
+.z_btn {
+  width: 110%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #666;
+  color: #323a44;
+  border-radius: 5px;
+  background-color: white;
+}
+.z_btn:hover {
+  border: 1px solid rgb(162, 209, 135);
+  cursor: pointer;
+  color: black;
+}
