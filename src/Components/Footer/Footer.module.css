@@ -139,6 +139,7 @@
   grid-gap: 8px 57px;
   width: 1020px;
   margin: auto;
+  padding-bottom: 25px;
 }
 
 .airport > div {
@@ -152,4 +153,40 @@
   color: rgb(229, 225, 193);
   font-size: 15px;
   text-decoration: none;
+}
+
+/**=======================
+ * !      Icons
+ *========================**/
+
+ .footer1 hr {
+  margin-top: 0;
+}
+
+ .address {
+  width: 1027px;
+  text-align: left;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+.social img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+
+.address p {
+  font-size: 15px;
+  color: rgb(173, 179, 184);
+  margin-left: 5px;
+}
+
+.address .social {
+  display: grid;
+  grid-template-columns: 20px 20px 20px 20px 20px 20px;
+  grid-template-rows: auto;
+  grid-gap: 40px;
+  padding: 8px;
 }

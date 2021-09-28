@@ -1,0 +1,30 @@
+.main {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.contentInc {
+  width: 100%;
+  background-color: #eaeaea;
+  margin-top: -20px;
+}
+.content {
+  color: rgb(56, 54, 54);
+  margin: auto;
+  padding: 5px;
+  width: 74vw;
+  font-size: 13px;
+  text-align: justify;
+}
+.content a {
+  text-decoration: none;
+  color: green;
+}
+.content h3 {
+  font-weight: 600;
+  color: rgb(119, 119, 106);
+
+  font-size: 20px;
+  font-family: sans-serif;
+}
