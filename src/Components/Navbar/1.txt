@@ -1,0 +1,1 @@
+style={{ "width": "350px", "border": "1px solid black", "margin": " 20px auto", "padding": "30px", "height": "500px", "background-color": "rgb(255, 255, 255)" }}

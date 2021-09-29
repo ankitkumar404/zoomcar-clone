@@ -1,7 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from "react-bootstrap/Modal";
+import Carousel from "react-bootstrap/Carousel";
 import styles from './Nav.module.css'
 const Navbar = () => {
-    return (
+    const [show, setShow] = useState(false);
+    const [visible, setVisible] = useState(false);
+    const closeDone = () => setVisible(false);
+    const handleVisible = () => setVisible(true);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    return (<>
         <div className={styles.mainNav}>
             <nav className={styles.navbar}>
                 <div className={styles.logo}>
@@ -66,13 +74,128 @@ const Navbar = () => {
                         </div>
 
                     </li>
-                    <li className={styles.item} id={styles.signup_btn}>SIGNUP</li>
-                    <li className={styles.item} id={styles.login_btn}>LOGIN</li>
+                    <li onClick={handleShow} className={styles.item} id={styles.signup_btn}>
+                        SIGNUP
+                    </li>
+                    <li onClick={handleVisible} className={styles.item} id={styles.login_btn}>LOGIN</li>
 
                 </ul>
             </nav>
         </div>
-    )
+        <Modal centered size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            show={show} onHide={handleClose}>
+            <div className={styles.flexbox}>
+                <div>
+                    <Carousel variant="dark" interval={1000} className={styles.mainCarousel}>
+                        <Carousel.Item>
+                            <img style={{ 'margin-bottom': "200px", "padding": "25px" }}
+                                className="d-block w-100"
+                                src="https://www.zoomcar.com/build/img/promo-3.f243fadd09ecdd1d9cb70694fa1be058.png"
+                                alt="First slide"
+                            />
+                            <Carousel.Caption >
+                                <h3>Free Fuel</h3>
+                                <h6 className={styles.h6}>The fuel on us for your trip. In case you re-fuel a zoomcar, we will refill your pockets and that's a promise.</h6>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img style={{ 'margin-bottom': "180px", "padding": "25px" }}
+                                className="d-block w-100"
+                                src="https://www.zoomcar.com/build/img/promo-1.1a6e5812962b16014f7311ed801fbf71.png"
+                                alt="Second slide"
+                            />
+                            <Carousel.Caption>
+                                <h3>Refer and Earn</h3>
+                                <h6 className={styles.h6}>Refer or invite your friends to zoomcar and earn free rides, free z-ponts and more.</h6>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img style={{ 'margin-bottom': "200px", "padding": "25px" }}
+                                className="d-block w-100"
+                                src="https://www.zoomcar.com/build/img/promo_supermiler.7a597371bd16587f1d46a66dbff6b72e.svg"
+                                alt="Third slide"
+                            />
+                            <Carousel.Caption>
+                                <h3>Supermiler Club</h3>
+                                <h6 className={styles.h6}>Premium club which rewards you everytime you drive with us.</h6>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
+
+                <div className={styles.signupForm}>
+                    <div className={styles.photoDiv}>
+                        <img src="https://www.zoomcar.com/build/img/zoom-logo-color.e3ec2e4b625f1a06ddb9a6ac765abb19.png" alt="logo" />
+                    </div>
+                    <form type="submit">
+                        <input type="number" name="phone" placeholder="Phone number" />
+                        <input type="text" name="name" placeholder="Enter name" />
+                        <input type="text" name="email" placeholder="Enter email" />
+                        <input type="password" name="password" placeholder="Enter password" />
+                    </form>
+                        <button>Submit</button>
+                </div>
+            </div>
+        </Modal>
+
+
+
+        <Modal centered size="lg"
+            aria-labelledby="contained-modal-title-vcenter"
+            show={visible} onHide={closeDone}>
+            <div className={styles.flexbox}>
+                <div>
+                    <Carousel variant="dark" interval={1000} className={styles.mainCarousel}>
+                        <Carousel.Item>
+                            <img style={{ 'margin-bottom': "200px", "padding": "25px" }}
+                                className="d-block w-100"
+                                src="https://www.zoomcar.com/build/img/promo-3.f243fadd09ecdd1d9cb70694fa1be058.png"
+                                alt="First slide"
+                            />
+                            <Carousel.Caption >
+                                <h3>Free Fuel</h3>
+                                <h6 className={styles.h6}>The fuel on us for your trip. In case you re-fuel a zoomcar, we will refill your pockets and that's a promise.</h6>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img style={{ 'margin-bottom': "180px", "padding": "25px" }}
+                                className="d-block w-100"
+                                src="https://www.zoomcar.com/build/img/promo-1.1a6e5812962b16014f7311ed801fbf71.png"
+                                alt="Second slide"
+                            />
+                            <Carousel.Caption>
+                                <h3>Refer and Earn</h3>
+                                <h6 className={styles.h6}>Refer or invite your friends to zoomcar and earn free rides, free z-ponts and more.</h6>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img style={{ 'margin-bottom': "200px", "padding": "25px" }}
+                                className="d-block w-100"
+                                src="https://www.zoomcar.com/build/img/promo_supermiler.7a597371bd16587f1d46a66dbff6b72e.svg"
+                                alt="Third slide"
+                            />
+                            <Carousel.Caption>
+                                <h3>Supermiler Club</h3>
+                                <h6 className={styles.h6}>Premium club which rewards you everytime you drive with us.</h6>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
+
+                <div className={styles.signupForm}>
+                    <div className={styles.photoDiv}>
+                        <img src="https://www.zoomcar.com/build/img/zoom-logo-color.e3ec2e4b625f1a06ddb9a6ac765abb19.png" alt="logo" />
+                    </div>
+                    <form>
+                        <input type="text" name="email" placeholder="Enter email" />
+                        <input type="password" name="password" placeholder="Enter password" />
+                        <button>Login</button>
+                    </form>
+                </div>
+            </div>
+        </Modal>
+    </>)
 }
 
 export default Navbar

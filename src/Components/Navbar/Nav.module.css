@@ -43,11 +43,11 @@
   margin: 5px 10px;
   cursor: pointer;
   /* border: 1px solid black; */
-   display: block;
-    border-radius: 20px;
-    text-decoration: none;
-    color: aliceblue;
-    margin: 15px 0;
+  display: block;
+  border-radius: 20px;
+  text-decoration: none;
+  color: aliceblue;
+  margin: 15px 0;
 }
 
 /* .fa-caret-down {
@@ -113,7 +113,7 @@
 }
 
 .subscrLogo1 {
-        /* background-image: url("./NavImages/sub_logo.png"); */
+  /* background-image: url("./NavImages/sub_logo.png"); */
   display: block;
   background-size: 120px;
   background-repeat: no-repeat;
@@ -332,4 +332,92 @@
   height: 25px;
   margin-right: 15px;
   margin-left: 5px;
+}
+
+/**=======================
+ * !      Signup
+ *========================**/
+
+.flexbox {
+  width: 100%;
+  height: 98vh;
+  margin: auto;
+  display: flex;
+  background-color: rgb(243, 243, 243);
+}
+
+.flexbox > div:nth-child(1) {
+  width: 50%;
+  /* border: 1px solid black; */
+}
+.signupForm {
+  width: 50%;
+  padding: 2%;
+  /* border: 1px solid black; */
+}
+
+.photoDiv {
+  display: block;
+  width: 190px;
+  margin: 10% auto 13%;
+  /* border: 1px solid black; */
+}
+
+.signupForm > form {
+  padding: 5px;
+  /* border: 1px solid black; */
+}
+
+.signupForm > form > input {
+  width: 290px;
+  padding: 11px;
+  display: block;
+  margin: 0 auto 4%;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}
+
+.signupForm button {
+  width: 130px;
+  padding: 6px;
+  font-size: 22px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  background-color: rgb(9, 158, 64);
+  color: white;
+  border-radius: 5px;
+  margin-left: 33%;
+}
+
+.signupForm button:hover {
+  background-color: purple;
+  color: white;
+}
+/**=======================
+ * !      caarousel
+ *========================**/
+
+/* .mainCarouselDiv {
+  width: 90%;
+  height: 50%;
+} */
+.mainCarousel {
+  width: 350px;
+  margin: 20px auto;
+  padding: 30px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.carouselImges {
+  margin-bottom: 200px;
+  padding: 25px;
+}
+
+.h6 {
+  text-align: center;
+  color: gray;
 }
