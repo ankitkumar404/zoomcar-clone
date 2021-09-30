@@ -14,8 +14,8 @@ const CarCarousel = () => {
 
                     <div className ={styles.carList}>
 
-                        <span className={`${styles.arrowmiddle} ${styles.leftmiddle}`} onclick="plusMove(-1)"></span> <span className={`${styles.arrowmiddle} ${styles.rightmiddle}`}
-                            onclick="plusMove(1)"></span>
+                        <span className={`${styles.arrowmiddle} ${styles.leftmiddle}`}></span> <span className={`${styles.arrowmiddle} ${styles.rightmiddle}`}
+                            ></span>
 
                         <div className ={styles.row}>
 

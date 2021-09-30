@@ -5,8 +5,8 @@ const FooterBottom = () => {
         <div className={styles.main}>
             <div className={styles.contentInc}>
                 <div className={styles.content}>
-                    <p>
-                    <h3>SELF DRIVE CARS IN MUMBAI</h3><span>The financial capital of India, Mumbai is a city which never sleeps.
+                    <div>
+                    <h3>SELF DRIVE CARS IN MUMBAI</h3> <span>The financial capital of India, Mumbai is a city which never sleeps.
                     Buzzing with activity, it also holds the distinction of being the entertainment hub of the country.With a
                     beach
                     in its backyard and the picturesque Western Ghats a stone’s throw away, the city attracts visitors from all
@@ -47,7 +47,7 @@ const FooterBottom = () => {
                     a
                     <b>self drive car</b> in any city you visit with the Zoomcar app on your phone and feel at home wherever you
                     go.</span>
-                    </p>
+                    </div>
                     </div>
                 </div>
                 
