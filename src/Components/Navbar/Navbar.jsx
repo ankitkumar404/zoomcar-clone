@@ -20,7 +20,7 @@ const Navbar = () => {
 
     const [formSignup, setFormSignup] = useState(init);
     const [form, setForm] = useState(loginInit);
-    const [login, setLogin] = useState(false);
+    // const [login, setLogin] = useState(false);
 
     /**-----------------------
  * !      Signup onchange

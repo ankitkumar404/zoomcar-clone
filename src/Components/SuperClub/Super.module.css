@@ -82,6 +82,7 @@
   color: #323a44;
   border-radius: 5px;
   background-color: white;
+  /* margin-bottom: 30px; */
 }
 .z_btn:hover {
   border: 1px solid rgb(162, 209, 135);

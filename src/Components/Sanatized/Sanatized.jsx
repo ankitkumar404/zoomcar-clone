@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Sanatized.module.css'
 const Sanatized = () => {
     return (
@@ -22,7 +23,9 @@ const Sanatized = () => {
                         </select>
                     </h3>
                     <div className={styles.journey}>
-                        <p>Start your wonderful journey <img src="./SanatizeImg/next.png" alt="" /> </p>
+                        <p>Start your wonderful journey <Link to="/search">
+                            <img src="./SanatizeImg/next.png" alt="" />
+                        </Link>  </p>
                     </div>
                 </div> 
             </div>

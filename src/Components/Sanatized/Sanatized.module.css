@@ -40,11 +40,13 @@
   font-weight: 400;
   cursor: pointer;
   text-decoration: none;
+  
 }
 .journey p {
   display: flex;
   text-decoration: none;
   color: black;
+  /* align-items: center; */
   font-size: 15px;
   margin: 0%;
 }
@@ -73,4 +75,3 @@
   color: black;
   font-size: 15px;
 }
-
